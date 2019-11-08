@@ -1,0 +1,130 @@
+
+
+# HAVERLAND AP for MQTT Climate
+# Smartbox data and ststem wide setup:
+# devs_url = 'https://api-haverland.helki.com/api/v2/devs/'
+#{
+#    "devs": [
+#        {
+#            "dev_id": "{your_device_id}",
+#            "name": "Thebussem",
+#            "product_id": "0105",
+#            "fw_version": "1.17",
+#            "serial_id": "14"
+#        }
+#    ],
+# Sample output from AWAY url
+# away_url = 'https://api-haverland.helki.com/api/v2/devs/{your_device_id}/mgr/away_status'
+#{
+#    "enabled": true,
+#    "away": true,
+#    "forced": true
+#}
+# Sample output from LIMIT url
+# limit_url = 'https://api-haverland.helki.com/api/v2/devs/{your_device_id}/htr_system/power_limit'
+#{
+#    "power_limit": "0"
+#}
+# Nodes or devices (heaters) linked to the Smartbox data:
+# nodes_url = 'https://api-haverland.helki.com/api/v2/devs/{your_device_id}/mgr/nodes'
+#{
+#    "nodes": [
+#        {
+#            "addr": 2,
+#            "type": "htr",
+#            "name": "Bedroom",
+#            "installed": true,
+#            "lost": false
+#        },
+#        {
+#            "addr": 3,
+#            "type": "htr",
+#            "name": "Staircase",
+#            "installed": true,
+#            "lost": false
+#        }
+#    ]
+#}
+# Individual device setup, status, and history information.
+# Sample output from SETUP url
+# setup_url = 'https://api-haverland.helki.com/api/v2/devs/{your_device_id}/htr/{addr}/setup'
+#{
+#    "sync_status": "ok",
+#    "control_mode": 6,
+#    "units": "C",
+#    "power": "900.0",
+#    "offset": "0.0",
+#    "priority": "low",
+#    "away_mode": 0,
+#    "away_offset": "0.5",
+#    "modified_auto_span": 0,
+#    "window_mode_enabled": true,
+#    "true_radiant_enabled": true,
+#    "factory_options": {
+#        "temp_compensation_enabled": false,
+#        "window_mode_available": true,
+#        "true_radiant_available": true,
+#        "operating_mode": 0
+#    }
+#}
+#status_url = 'https://api-haverland.helki.com/api/v2/devs/{your_device_id}/htr/{addr}/status'
+#{
+#    "sync_status": "ok",
+#    "mode": "off",
+#    "active": false,
+#    "ice_temp": "5.0",
+#    "eco_temp": "21.0",
+#    "comf_temp": "23.0",
+#    "units": "C",
+#    "stemp": "5.0",
+#    "mtemp": "24.7",
+#    "power": "1200.0",
+#    "locked": true,
+#    "duty": 0,
+#    "pcb_temp": "29",
+#    "presence": false,
+#    "window_open": false,
+#    "true_radiant_active": false,
+#    "boost": false,
+#    "error_code": 0
+#}
+# Sample output from SAMPLES url
+# samples_url = 'https://api-haverland.helki.com/api/v2/devs/{your_device_id}/htr/{addr}/samples?start=1567267200&end=1569859200'
+#{
+#    "samples": [
+#        {
+#            "t": 1567267200,
+#            "temp": "27.4",
+#            "counter": 216602
+#        },
+#        {
+#            "t": 1567270800,
+#            "temp": "27.4",
+#            "counter": 216602
+#        },
+#        {
+#            "t": 1567274400,
+#            "temp": "27.6",
+#            "counter": 216602
+#        },
+#        {
+#            "t": 1567278000,
+#            "temp": "27.5",
+# Access Token Expired
+#{
+#    "error": {
+#        "code": 0,
+#        "desc": "The access token provided is invalid."
+#    }
+#}
+#{"stemp":"12.5","units":"C","mode":"manual"}
+#{"mode":"off"}
+#{"locked":true}
+#{"stemp":"12.0","units":"C","mode":"modified_auto"}
+#{'code': 0, 'desc': 'The access token provided is invalid.'}
+#https://api-haverland.helki.com/api/v2/devs/{your_device_id}/htr/3/setup
+{"control_mode":6,"units":"C","power":"900.0","offset":"0.0","priority":"medium","away_mode":0,"away_offset":"0.5","modified_auto_span":0,"window_mode_enabled":false,"true_radiant_enabled":false}
+{"control_mode":6,"units":"C","power":"900.0","offset":"0.0","priority":"high","away_mode":0,"away_offset":"2.0","modified_auto_span":0,"window_mode_enabled":true,"true_radiant_enabled":true,"factory_options":{"temp_compensation_enabled":false,"window_mode_available":true,"true_radiant_available":true,"operating_mode":0}}
+https://api-haverland.helki.com/api/v2/devs/{your_device_id}/mgr/away_status
+{"away":true,"enabled":true}
+{"away":false,"enabled":true}
