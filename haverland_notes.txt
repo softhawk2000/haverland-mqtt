@@ -7,7 +7,7 @@
 #    "devs": [
 #        {
 #            "dev_id": "{your_device_id}",
-#            "name": "Thebussem",
+#            "name": "{your_device_name}",
 #            "product_id": "0105",
 #            "fw_version": "1.17",
 #            "serial_id": "14"
