@@ -117,14 +117,4 @@
 #        "desc": "The access token provided is invalid."
 #    }
 #}
-#{"stemp":"12.5","units":"C","mode":"manual"}
-#{"mode":"off"}
-#{"locked":true}
-#{"stemp":"12.0","units":"C","mode":"modified_auto"}
-#{'code': 0, 'desc': 'The access token provided is invalid.'}
-#https://api-haverland.helki.com/api/v2/devs/{your_device_id}/htr/3/setup
-{"control_mode":6,"units":"C","power":"900.0","offset":"0.0","priority":"medium","away_mode":0,"away_offset":"0.5","modified_auto_span":0,"window_mode_enabled":false,"true_radiant_enabled":false}
-{"control_mode":6,"units":"C","power":"900.0","offset":"0.0","priority":"high","away_mode":0,"away_offset":"2.0","modified_auto_span":0,"window_mode_enabled":true,"true_radiant_enabled":true,"factory_options":{"temp_compensation_enabled":false,"window_mode_available":true,"true_radiant_available":true,"operating_mode":0}}
-https://api-haverland.helki.com/api/v2/devs/{your_device_id}/mgr/away_status
-{"away":true,"enabled":true}
-{"away":false,"enabled":true}
+#
